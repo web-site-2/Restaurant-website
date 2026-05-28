@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Aurum – A premium fine dining restaurant in the heart of the city. Experience culinary artistry with seasonal ingredients and exquisite flavors." />
+  <meta name="keywords" content="fine dining, luxury restaurant, gourmet food, chef's table, tasting menu" />
+  <meta property="og:title" content="Aurum – Fine Dining Experience" />
+  <meta property="og:description" content="Where culinary artistry meets timeless elegance. Reserve your table tonight." />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1200" />
+  <meta property="og:type" content="website" />
+  <title>Aurum – Fine Dining Experience</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===================== NAVBAR ===================== -->
+  <nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo" aria-label="Aurum home">
+        <span class="logo-text">AURUM</span>
+        <span class="logo-sub">FINE DINING</span>
+      </a>
+      <ul class="nav-links" id="navLinks" role="list">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#menu" class="nav-link">Menu</a></li>
+        <li><a href="#chefs" class="nav-link">Chefs</a></li>
+        <li><a href="#gallery" class="nav-link">Gallery</a></li>
+        <li><a href="#testimonials" class="nav-link">Reviews</a></li>
+        <li><a href="#reservation" class="nav-link nav-cta">Reserve</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===================== HERO ===================== -->
+  <section class="hero" id="home" aria-label="Hero section">
+    <div class="hero-bg">
+      <img
+        src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1800&q=85"
+        alt="Elegant restaurant interior"
+        class="hero-img"
+        loading="eager"
+      />
+      <div class="hero-overlay"></div>
+    </div>
+    <div class="hero-content">
+      <p class="hero-tagline reveal-up">Est. 2008 · New York City</p>
+      <h1 class="hero-title reveal-up delay-1">
+        Where Every Dish<br /><em>Tells a Story</em>
+      </h1>
+      <p class="hero-subtitle reveal-up delay-2">
+        Seasonal ingredients. Timeless techniques. An experience that lingers.
+      </p>
+      <div class="hero-buttons reveal-up delay-3">
+        <a href="#reservation" class="btn btn-gold">Reserve a Table</a>
+        <a href="#menu" class="btn btn-outline">Explore Menu</a>
+      </div>
+    </div>
+    <div class="hero-scroll-hint" aria-hidden="true">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ===================== INTRO STRIP ===================== -->
+  <section class="intro-strip" aria-label="Restaurant highlights">
+    <div class="intro-grid">
+      <div class="intro-item reveal-up">
+        <i class="fa-solid fa-award" aria-hidden="true"></i>
+        <h3>Michelin Starred</h3>
+        <p>Two stars since 2015</p>
+      </div>
+      <div class="intro-item reveal-up delay-1">
+        <i class="fa-solid fa-leaf" aria-hidden="true"></i>
+        <h3>Farm to Table</h3>
+        <p>100% seasonal ingredients</p>
+      </div>
+      <div class="intro-item reveal-up delay-2">
+        <i class="fa-solid fa-wine-glass" aria-hidden="true"></i>
+        <h3>Curated Cellar</h3>
+        <p>1,200+ wine selections</p>
+      </div>
+      <div class="intro-item reveal-up delay-3">
+        <i class="fa-solid fa-clock" aria-hidden="true"></i>
+        <h3>Private Dining</h3>
+        <p>Exclusive events & parties</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== MENU ===================== -->
+  <section class="menu-section" id="menu" aria-label="Menu section">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-tag">Our Menu</span>
+        <h2 class="section-title">Curated for the Discerning Palate</h2>
+        <p class="section-subtitle">Each dish is a dialogue between tradition and innovation</p>
+      </div>
+
+      <!-- Category Tabs -->
+      <div class="menu-tabs reveal-up" role="tablist" aria-label="Menu categories">
+        <button class="tab-btn active" data-tab="starters" role="tab" aria-selected="true" aria-controls="tab-starters">Starters</button>
+        <button class="tab-btn" data-tab="mains" role="tab" aria-selected="false" aria-controls="tab-mains">Mains</button>
+        <button class="tab-btn" data-tab="desserts" role="tab" aria-selected="false" aria-controls="tab-desserts">Desserts</button>
+        <button class="tab-btn" data-tab="drinks" role="tab" aria-selected="false" aria-controls="tab-drinks">Drinks</button>
+      </div>
+
+      <!-- Starters -->
+      <div class="menu-grid tab-content active" id="tab-starters" role="tabpanel">
+        <div class="menu-card reveal-up">
+          <div class="menu-card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=600&q=80" alt="Tuna Tartare" loading="lazy" />
+            <span class="menu-badge">Chef's Pick</span>
+          </div>
+          <div class="menu-card-body">
+            <div class="menu-card-top">
+              <h3>Tuna Tartare</h3>
+              <span class="price">$28</span>
+            </div>
+            <p>Yellowfin tuna, avocado purée, yuzu ponzu, micro shiso, sesame tuile</p>
+            <div class="menu-tags">
+              <span>Gluten Free</span><span>Raw</span>
+            </div>
+          </div>
+        </div>
+        <div class="menu-card reveal-up delay-1">
+          <div class="menu-card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1476224203421-9ac39bcb3b21?w=600&q=80" alt="Foie Gras Torchon" loading="lazy" />
+          </div>
+          <div class="menu-card-body">
+            <div class="menu-card-top">
+              <h3>Foie Gras Torchon</h3>
+              <span class="price">$42</span>
+            </div>
+            <p>Sauternes gelée, brioche, Maldon sea salt, seasonal stone fruit compote</p>
+            <div class="menu-tags"><span>Signature</span></div>
+          </div>
+        </div>
+        <div class="menu-card reveal-up delay-2">
+          <div class="menu-card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1547592166-23ac45744acd?w=600&q=80" alt="Burrata" loading="lazy" />
+          </div>
+          <div class="menu-card-body">
+            <div class="menu-card-top">
+              <h3>Heritage Burrata</h3>
+              <span class="price">$24</span>
+            </div>
+            <p>Heirloom tomato, aged balsamic, Sicilian olive oil, fresh basil oil</p>
+            <div class="menu-tags"><span>Vegetarian</span></div>
+          </div>
+        </div>
+        <div class="menu-card reveal-up delay-3">
+          <div class="menu-card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1603360946369-dc9bb6258143?w=600&q=80" alt="Lobster Bisque" loading="lazy" />
+          </div>
+          <div class="menu-card-body">
+            <div class="menu-card-top">
+              <h3>Lobster Bisque</h3>
+              <span class="price">$32</span>
+            </div>
+            <p>Maine lobster, cognac, crème fraîche, chive oil, lobster medallion</p>
+            <div class="menu-tags"><span>Shellfish</span></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mains -->
+      <div class="menu-grid tab-content" id="tab-mains" role="tabpanel">
+        <div class="menu-card reveal-up">
+          <div class="menu-card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1558030006-450675393462?w=600&q=80" alt="Wagyu Beef" loading="lazy" />
+            <span class="menu-badge">Signature</span>
+          </div>
+          <div class="menu-card-body">
+            <div class="menu-card-top">
+              <h3>A5 Wagyu Striploin</h3>
+              <span class="price">$145</span>
+            </div>
+            <p>Japanese A5 Wagyu, truffle jus, pomme purée, seasonal mushrooms, watercress</p>
+            <div class="menu-tags"><span>Premium</span></div>
+          </div>
+        </div>
+        <div class="menu-card reveal-up delay-1">
+          <div class="menu-card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?w=600&q=80" alt="Sea Bass" loading="lazy" />
+          </div>
+          <div class="menu-card-body">
+            <div class="menu-card-top">
+              <h3>Chilean Sea Bass</h3>
+              <span class="price">$68</span>
+            </div>
+            <p>Miso-glazed, dashi broth, bok choy, pickled ginger, crispy shallots</p>
+            <div class="menu-tags"><span>Gluten Free</span></div>
+          </div>
+        </div>
+        <div class="menu-card reveal-up delay-2">
+          <div class="menu-card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1432139509613-5c4255815697?w=600&q=80" alt="Duck Confit" loading="lazy" />
+          </div>
+          <div class="menu-card-body">
+            <div class="menu-card-top">
+              <h3>Duck à l'Orange</h3>
+              <span class="price">$58</span>
+            </div>
+            <p>Slow-roasted duck breast, grand marnier reduction, fennel purée, duck fat potatoes</p>
+            <div class="menu-tags"><span>Chef's Pick</span></div>
+          </div>
+        </div>
+        <div class="menu-card reveal-up delay-3">
+          <div class="menu-card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1600891964092-4316c288032e?w=600&q=80" alt="Rack of Lamb" loading="lazy" />
+          </div>
+          <div class="menu-card-body">
+            <div class="menu-card-top">
+              <h3>Rack of Lamb</h3>
+              <span class="price">$72</span>
+            </div>
+            <p>Herb-crusted Colorado lamb, rosemary jus, ratatouille, gratin dauphinois</p>
+            <div class="menu-tags"><span>Seasonal</span></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Desserts -->
+      <div class="menu-grid tab-content" id="tab-desserts" role="tabpanel">
+        <div class="menu-card reveal-up">
+          <div class="menu-card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1551024601-bec78aea704b?w=600&q=80" alt="Chocolate Soufflé" loading="lazy" />
+            <span class="menu-badge">Must Try</span>
+          </div>
+          <div class="menu-card-body">
+            <div class="menu-card-top">
+              <h3>Valrhona Soufflé</h3>
+              <span class="price">$22</span>
+            </div>
+            <p>72% dark chocolate, vanilla crème anglaise, gold leaf, cacao nib dust</p>
+            <div class="menu-tags"><span>Vegetarian</span></div>
+          </div>
+        </div>
+        <div class="menu-card reveal-up delay-1">
+          <div class="menu-card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1488477181946-6428a0291777?w=600&q=80" alt="Crème Brûlée" loading="lazy" />
+          </div>
+          <div class="menu-card-body">
+            <div class="menu-card-top">
+              <h3>Vanilla Crème Brûlée</h3>
+              <span class="price">$18</span>
+            </div>
+            <p>Madagascar vanilla, torched sugar, fresh raspberries, tuile biscuit</p>
+            <div class="menu-tags"><span>Classic</span></div>
+          </div>
+        </div>
+        <div class="menu-card reveal-up delay-2">
+          <div class="menu-card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?w=600&q=80" alt="Lemon Tart" loading="lazy" />
+          </div>
+          <div class="menu-card-body">
+            <div class="menu-card-top">
+              <h3>Amalfi Lemon Tart</h3>
+              <span class="price">$20</span>
+            </div>
+            <p>Lemon curd, Italian meringue, shortcrust pastry, limoncello sorbet</p>
+            <div class="menu-tags"><span>Refreshing</span></div>
+          </div>
+        </div>
+        <div class="menu-card reveal-up delay-3">
+          <div class="menu-card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?w=600&q=80" alt="Cheese Board" loading="lazy" />
+          </div>
+          <div class="menu-card-body">
+            <div class="menu-card-top">
+              <h3>Artisan Cheese Board</h3>
+              <span class="price">$36</span>
+            </div>
+            <p>Selection of 5 cheeses, honeycomb, fig jam, candied walnuts, artisan crackers</p>
+            <div class="menu-tags"><span>Share</span></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Drinks -->
+      <div class="menu-grid tab-content" id="tab-drinks" role="tabpanel">
+        <div class="menu-card reveal-up">
+          <div class="menu-card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?w=600&q=80" alt="Cocktail" loading="lazy" />
+            <span class="menu-badge">Signature</span>
+          </div>
+          <div class="menu-card-body">
+            <div class="menu-card-top">
+              <h3>Golden Hour</h3>
+              <span class="price">$22</span>
+            </div>
+            <p>Champagne, elderflower liqueur, gold flake, fresh lychee, citrus foam</p>
+            <div class="menu-tags"><span>Signature</span></div>
+          </div>
+        </div>
+        <div class="menu-card reveal-up delay-1">
+          <div class="menu-card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?w=600&q=80" alt="Wine" loading="lazy" />
+          </div>
+          <div class="menu-card-body">
+            <div class="menu-card-top">
+              <h3>Château Margaux '18</h3>
+              <span class="price">$380</span>
+            </div>
+            <p>Premier Grand Cru Classé, Margaux AOC, Bordeaux — full glass service</p>
+            <div class="menu-tags"><span>Premium Wine</span></div>
+          </div>
+        </div>
+        <div class="menu-card reveal-up delay-2">
+          <div class="menu-card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1544145945-f90425340c7e?w=600&q=80" alt="Whisky" loading="lazy" />
+          </div>
+          <div class="menu-card-body">
+            <div class="menu-card-top">
+              <h3>Macallan 18 Neat</h3>
+              <span class="price">$55</span>
+            </div>
+            <p>Single malt Scotch whisky, 18 years aged, served with a single obsidian ice sphere</p>
+            <div class="menu-tags"><span>Spirits</span></div>
+          </div>
+        </div>
+        <div class="menu-card reveal-up delay-3">
+          <div class="menu-card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1437418747212-8d9709afab22?w=600&q=80" alt="Mocktail" loading="lazy" />
+          </div>
+          <div class="menu-card-body">
+            <div class="menu-card-top">
+              <h3>Garden Elixir</h3>
+              <span class="price">$14</span>
+            </div>
+            <p>Cold-pressed cucumber, elderflower, tonic, fresh herbs, edible flowers</p>
+            <div class="menu-tags"><span>Non-Alcoholic</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CHEFS ===================== -->
+  <section class="chefs-section" id="chefs" aria-label="Our chefs">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-tag">The Team</span>
+        <h2 class="section-title">Masters of Their Craft</h2>
+        <p class="section-subtitle">Our kitchen is led by award-winning chefs with a shared passion for excellence</p>
+      </div>
+      <div class="chefs-grid">
+        <div class="chef-card reveal-up">
+          <div class="chef-img-wrap">
+            <img src="https://images.unsplash.com/photo-1607631568010-a87245c0daf8?w=600&q=80" alt="Chef Marcus Veil" loading="lazy" />
+            <div class="chef-overlay">
+              <div class="chef-social">
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="chef-info">
+            <h3>Marcus Veil</h3>
+            <span class="chef-role">Executive Chef & Founder</span>
+            <p>Trained at Le Cordon Bleu, Paris. Formerly of Noma and The Fat Duck. Two-time James Beard Award nominee.</p>
+          </div>
+        </div>
+        <div class="chef-card reveal-up delay-1">
+          <div class="chef-img-wrap">
+            <img src="https://images.unsplash.com/photo-1594834749768-1b5b1d2d8aad?w=600&q=80" alt="Chef Sophia Laurent" loading="lazy" />
+            <div class="chef-overlay">
+              <div class="chef-social">
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="chef-info">
+            <h3>Sophia Laurent</h3>
+            <span class="chef-role">Head Pastry Chef</span>
+            <p>World Pastry Champion 2019. Her desserts have been featured in Vogue Living and The New York Times.</p>
+          </div>
+        </div>
+        <div class="chef-card reveal-up delay-2">
+          <div class="chef-img-wrap">
+            <img src="https://images.unsplash.com/photo-1583394293214-0b7c4db68dc0?w=600&q=80" alt="Chef Kenji Mori" loading="lazy" />
+            <div class="chef-overlay">
+              <div class="chef-social">
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="chef-info">
+            <h3>Kenji Mori</h3>
+            <span class="chef-role">Sous Chef – Japanese Techniques</span>
+            <p>Trained under Nobu Matsuhisa, bringing precision Japanese knife work and umami mastery to every plate.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== GALLERY ===================== -->
+  <section class="gallery-section" id="gallery" aria-label="Photo gallery">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-tag">Gallery</span>
+        <h2 class="section-title">A Feast for the Eyes</h2>
+      </div>
+    </div>
+    <div class="gallery-grid reveal-up">
+      <div class="gallery-item tall">
+        <img src="https://images.unsplash.com/photo-1424847651672-bf20a4b0982b?w=800&q=80" alt="Restaurant interior" loading="lazy" />
+        <div class="gallery-overlay"><i class="fa-solid fa-expand"></i></div>
+      </div>
+      <div class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=600&q=80" alt="Gourmet dish" loading="lazy" />
+        <div class="gallery-overlay"><i class="fa-solid fa-expand"></i></div>
+      </div>
+      <div class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1467003909585-2f8a72700288?w=600&q=80" alt="Fine dining" loading="lazy" />
+        <div class="gallery-overlay"><i class="fa-solid fa-expand"></i></div>
+      </div>
+      <div class="gallery-item wide">
+        <img src="https://images.unsplash.com/photo-1559329007-40df8a9345d8?w=800&q=80" alt="Chef at work" loading="lazy" />
+        <div class="gallery-overlay"><i class="fa-solid fa-expand"></i></div>
+      </div>
+      <div class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1551218808-94e220e084d2?w=600&q=80" alt="Dessert plate" loading="lazy" />
+        <div class="gallery-overlay"><i class="fa-solid fa-expand"></i></div>
+      </div>
+      <div class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=600&q=80" alt="Food close-up" loading="lazy" />
+        <div class="gallery-overlay"><i class="fa-solid fa-expand"></i></div>
+      </div>
+    </div>
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer">
+      <button class="lightbox-close" id="lightboxClose" aria-label="Close lightbox"><i class="fa-solid fa-xmark"></i></button>
+      <img src="" alt="Gallery image" id="lightboxImg" />
+    </div>
+  </section>
+
+  <!-- ===================== TESTIMONIALS ===================== -->
+  <section class="testimonials-section" id="testimonials" aria-label="Customer reviews">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-tag">Reviews</span>
+        <h2 class="section-title">Voices of Our Guests</h2>
+      </div>
+      <div class="testimonials-slider reveal-up" id="testimonialSlider">
+        <div class="testimonials-track" id="testimonialTrack">
+          <div class="testimonial-card">
+            <div class="testimonial-stars" aria-label="5 out of 5 stars">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <p>"Aurum is not just a restaurant – it's a pilgrimage for the senses. The Wagyu striploin was unlike anything I have ever tasted. The sommelier's wine pairing was an act of pure genius."</p>
+            <div class="testimonial-author">
+              <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=100&q=80" alt="James H." loading="lazy" />
+              <div>
+                <strong>James H.</strong>
+                <span>New York Times Food Critic</span>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <div class="testimonial-stars" aria-label="5 out of 5 stars">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <p>"We celebrated our anniversary here and it was absolutely magical. Every detail — from the candlelight to the final petit four — was perfect. We will be returning for every special occasion."</p>
+            <div class="testimonial-author">
+              <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&q=80" alt="Claire M." loading="lazy" />
+              <div>
+                <strong>Claire M.</strong>
+                <span>Verified Guest</span>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <div class="testimonial-stars" aria-label="5 out of 5 stars">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <p>"The tasting menu is a masterclass in modern cuisine. Chef Veil manages to honor classic French technique while producing something thrillingly contemporary. Truly world-class."</p>
+            <div class="testimonial-author">
+              <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&q=80" alt="Robert K." loading="lazy" />
+              <div>
+                <strong>Robert K.</strong>
+                <span>Gourmet Traveler Magazine</span>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <div class="testimonial-stars" aria-label="5 out of 5 stars">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <p>"From the moment you walk in you know you're somewhere special. The service is impeccable — attentive without being intrusive. The chocolate soufflé is worth the visit alone."</p>
+            <div class="testimonial-author">
+              <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=100&q=80" alt="Nina S." loading="lazy" />
+              <div>
+                <strong>Nina S.</strong>
+                <span>Verified Guest · VIP Member</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="slider-controls">
+          <button class="slider-btn" id="sliderPrev" aria-label="Previous review"><i class="fa-solid fa-chevron-left"></i></button>
+          <div class="slider-dots" id="sliderDots" role="list"></div>
+          <button class="slider-btn" id="sliderNext" aria-label="Next review"><i class="fa-solid fa-chevron-right"></i></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== RESERVATION ===================== -->
+  <section class="reservation-section" id="reservation" aria-label="Make a reservation">
+    <div class="reservation-bg">
+      <img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?w=1800&q=80" alt="Restaurant ambiance" loading="lazy" />
+      <div class="reservation-overlay"></div>
+    </div>
+    <div class="container">
+      <div class="reservation-wrapper reveal-up">
+        <div class="reservation-info">
+          <span class="section-tag">Reservations</span>
+          <h2>Reserve Your Table</h2>
+          <p>Join us for an unforgettable experience. We recommend booking at least 48 hours in advance.</p>
+          <ul class="reservation-hours">
+            <li><i class="fa-solid fa-clock" aria-hidden="true"></i><span>Mon–Thu: 6:00 PM – 10:30 PM</span></li>
+            <li><i class="fa-solid fa-clock" aria-hidden="true"></i><span>Fri–Sat: 5:30 PM – 11:30 PM</span></li>
+            <li><i class="fa-solid fa-clock" aria-hidden="true"></i><span>Sunday: 5:00 PM – 9:30 PM</span></li>
+            <li><i class="fa-solid fa-phone" aria-hidden="true"></i><span>+1 (212) 555-0184</span></li>
+            <li><i class="fa-solid fa-location-dot" aria-hidden="true"></i><span>42 West 58th Street, New York, NY</span></li>
+          </ul>
+        </div>
+        <form class="reservation-form" id="reservationForm" novalidate aria-label="Reservation form">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="fname">First Name</label>
+              <input type="text" id="fname" name="fname" placeholder="Marcus" required autocomplete="given-name" />
+              <span class="form-error" aria-live="polite"></span>
+            </div>
+            <div class="form-group">
+              <label for="lname">Last Name</label>
+              <input type="text" id="lname" name="lname" placeholder="Veil" required autocomplete="family-name" />
+              <span class="form-error" aria-live="polite"></span>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="you@example.com" required autocomplete="email" />
+              <span class="form-error" aria-live="polite"></span>
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone</label>
+              <input type="tel" id="phone" name="phone" placeholder="+1 (212) 555-0000" autocomplete="tel" />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="date">Date</label>
+              <input type="date" id="date" name="date" required />
+              <span class="form-error" aria-live="polite"></span>
+            </div>
+            <div class="form-group">
+              <label for="time">Time</label>
+              <select id="time" name="time" required>
+                <option value="">Select time</option>
+                <option>5:30 PM</option><option>6:00 PM</option><option>6:30 PM</option>
+                <option>7:00 PM</option><option>7:30 PM</option><option>8:00 PM</option>
+                <option>8:30 PM</option><option>9:00 PM</option><option>9:30 PM</option>
+              </select>
+              <span class="form-error" aria-live="polite"></span>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="guests">Guests</label>
+              <select id="guests" name="guests" required>
+                <option value="">Number of guests</option>
+                <option>1</option><option>2</option><option>3</option><option>4</option>
+                <option>5</option><option>6</option><option>7</option><option>8+</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="occasion">Occasion</label>
+              <select id="occasion" name="occasion">
+                <option value="">Select occasion</option>
+                <option>None</option><option>Anniversary</option><option>Birthday</option>
+                <option>Business Dinner</option><option>Proposal</option><option>Other</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group full-width">
+            <label for="requests">Special Requests</label>
+            <textarea id="requests" name="requests" placeholder="Dietary restrictions, seating preferences, anything special..." rows="3"></textarea>
+          </div>
+          <button type="submit" class="btn btn-gold full-width">Confirm Reservation</button>
+          <div class="form-success" id="formSuccess" aria-live="polite" role="status" style="display:none;">
+            <i class="fa-solid fa-circle-check"></i>
+            <p>Your reservation request has been received. We'll confirm within 2 hours.</p>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer" role="contentinfo">
+    <div class="footer-top">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <span class="logo-text">AURUM</span>
+            <span class="logo-sub">FINE DINING</span>
+            <p>Culinary artistry rooted in classical technique, elevated by imagination. A New York institution since 2008.</p>
+            <div class="footer-social">
+              <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+              <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+              <a href="#" aria-label="TripAdvisor"><i class="fab fa-tripadvisor"></i></a>
+            </div>
+          </div>
+          <div class="footer-col">
+            <h4>Navigation</h4>
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#menu">Our Menu</a></li>
+              <li><a href="#chefs">Our Chefs</a></li>
+              <li><a href="#gallery">Gallery</a></li>
+              <li><a href="#reservation">Reservations</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Experience</h4>
+            <ul>
+              <li><a href="#">Tasting Menu</a></li>
+              <li><a href="#">Wine Pairing</a></li>
+              <li><a href="#">Private Dining</a></li>
+              <li><a href="#">Chef's Table</a></li>
+              <li><a href="#">Gift Cards</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Contact</h4>
+            <address>
+              <p><i class="fa-solid fa-location-dot"></i> 42 West 58th Street<br/>New York, NY 10019</p>
+              <p><i class="fa-solid fa-phone"></i> +1 (212) 555-0184</p>
+              <p><i class="fa-solid fa-envelope"></i> hello@aurumnyc.com</p>
+            </address>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p>&copy; 2025 Aurum Fine Dining. All rights reserved.</p>
+        <div class="footer-legal">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===================== WHATSAPP FLOAT ===================== -->
+  <a href="https://wa.me/12125550184" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Chat with us on WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+    <span class="whatsapp-tooltip">Chat with us</span>
+  </a>
+
+  <!-- Back to top -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
